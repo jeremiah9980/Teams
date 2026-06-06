@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTX Meza Bombers Fastpitch</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-primary: #00bfff;
+      --color-secondary: #000000;
+      --color-accent: #ffffff;
+      --color-text: #ffffff;
+      --color-text-dark: #000000;
+      --color-gradient: linear-gradient(135deg, #00bfff, #0080ff);
+      --color-glow: rgba(0, 191, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; color: var(--color-text-dark);">B</div>
+        <span class="navbar-title">BOMBERS</span>
+      </a>
+      <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+      <ul class="navbar-nav" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="board.html" class="nav-link">Board</a></li>
+        <li><a href="coaching.html" class="nav-link">Coaching</a></li>
+        <li><a href="bylaws.html" class="nav-link">Bylaws</a></li>
+        <li><a href="finances.html" class="nav-link">Finances</a></li>
+        <li><a href="policies.html" class="nav-link">Policies</a></li>
+        <li><a href="documents.html" class="nav-link">Documents</a></li>
+        <li><a href="support.html" class="nav-link">Support Us</a></li>
+        <li><a href="rallyiq.html" class="nav-link">RallyIQ</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 4rem; color: var(--color-text-dark);">
+          ★B
+        </div>
+        <h1 class="hero-title">BOMBERS FASTPITCH</h1>
+        <p class="hero-slogan">Built for the Fight</p>
+        <p class="hero-tagline">Building champions, one player at a time.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Join Our Team</a>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Stand For -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What We Stand For</h2>
+          <p class="section-subtitle">Excellence on and off the field</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">💪</div>
+            <h3 class="card-title">Competitive Excellence</h3>
+            <p class="card-text">We compete at the highest level, pushing our athletes to reach their full potential through rigorous training and game experience.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3 class="card-title">Team First</h3>
+            <p class="card-text">Individual success comes from team success. We build a family atmosphere where every player supports one another.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📚</div>
+            <h3 class="card-title">Character Development</h3>
+            <p class="card-text">We develop well-rounded individuals who excel in academics, athletics, and life through discipline and accountability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Games -->
+    <section class="section" style="background: rgba(0, 191, 255, 0.05);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Game Day</h2>
+          <p class="section-subtitle">Come out. Be loud. Let's go Bombers!</p>
+        </div>
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center; border: 2px solid var(--color-primary);">
+          <div style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 10px;">NEXT GAME</div>
+          <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary); margin-bottom: 10px;">BOMBERS vs TBD</div>
+          <div style="font-size: 1.2rem; margin-bottom: 5px;">📅 Check Schedule</div>
+          <div style="font-size: 1rem; color: rgba(255,255,255,0.6);">📍 Location TBD</div>
+          <a href="rallyiq.html" class="btn btn-primary" style="margin-top: 20px;">View Full Schedule</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RallyIQ CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="rallyiq-banner">
+          <div class="rallyiq-logo">RallyIQ</div>
+          <p class="rallyiq-tagline">Team Management, Simplified</p>
+          <p style="color: var(--color-text-dark); opacity: 0.8; max-width: 600px; margin: 0 auto 30px;">
+            Access schedules, make payments, view documents, and stay connected with the team.
+          </p>
+          <a href="rallyiq.html" class="btn" style="background: var(--color-text-dark); color: var(--color-primary);">
+            Access RallyIQ
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <div class="footer-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem; color: var(--color-text-dark);">B</div>
+          <span class="footer-title">CTX Meza Bombers</span>
+        </div>
+        <p style="color: rgba(255,255,255,0.6); max-width: 300px;">Building champions, one player at a time.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="bylaws.html">Bylaws</a></li>
+          <li><a href="rallyiq.html">RallyIQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Donate</a></li>
+          <li><a href="support.html">Sponsors</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 CTX Meza Bombers Fastpitch. All rights reserved. Powered by <a href="rallyiq.html">RallyIQ</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navMenu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

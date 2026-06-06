@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texas Venom Softball</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+  <style>
+    :root {
+      --color-primary: #7c3aed;
+      --color-secondary: #000000;
+      --color-accent: #84cc16;
+      --color-text: #ffffff;
+      --color-text-dark: #000000;
+      --color-gradient: linear-gradient(135deg, #7c3aed, #a855f7);
+      --color-glow: rgba(124, 58, 237, 0.5);
+    }
+
+    .texas-accent {
+      color: var(--color-accent);
+    }
+
+    .snake-icon::before {
+      content: "🐍";
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <div class="navbar-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🐍</div>
+        <span class="navbar-title">VENOM</span>
+      </a>
+      <button class="navbar-toggle" onclick="toggleNav()">☰</button>
+      <ul class="navbar-nav" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="coaching.html" class="nav-link">Coaching</a></li>
+        <li><a href="policies.html" class="nav-link">Policies</a></li>
+        <li><a href="documents.html" class="nav-link">Documents</a></li>
+        <li><a href="support.html" class="nav-link">Support Us</a></li>
+        <li><a href="rallyiq.html" class="nav-link">RallyIQ</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 4rem;">
+          🐍
+        </div>
+        <h1 class="hero-title">VENOM SOFTBALL</h1>
+        <p class="hero-slogan">Strike with Purpose</p>
+        <p class="hero-tagline">1% better each day.</p>
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Join Our Team</a>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Standards -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Standards</h2>
+          <p class="section-subtitle">"If you want to make everyone happy, don't be a leader. Sell ice cream." - Nick Saban</p>
+        </div>
+        <div style="max-width: 600px; margin: 0 auto;">
+          <ul class="standards-list">
+            <li>1% Better Each Day</li>
+            <li>Practice Like You Play</li>
+            <li>Do the Little Things Right</li>
+            <li>Be a Great Teammate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaching -->
+    <section class="section" style="background: rgba(124, 58, 237, 0.05);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Coaching</h2>
+          <p class="section-subtitle">Pushing athletes to their highest potential on and off the field</p>
+        </div>
+        <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
+          <div style="width: 100px; height: 100px; border-radius: 50%; background: var(--color-gradient); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">👤</div>
+          <h3 class="staff-name" style="font-size: 1.5rem; color: var(--color-primary);">Coach Chris Balcom</h3>
+          <p class="staff-role" style="margin-bottom: 20px;">Head Coach</p>
+          <p class="card-text">
+            Former 7 year professional baseball player with 10+ years in player development from ages 8-18.
+            Built on pushing your athletes to their highest potential on and off the field.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Info -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">12U Open Practice</h2>
+          <p class="section-subtitle">Looking for hard working, committed athletes</p>
+        </div>
+        <div class="card-grid" style="max-width: 900px; margin: 0 auto;">
+          <div class="card">
+            <div class="card-icon">📋</div>
+            <h3 class="card-title">What We're Looking For</h3>
+            <p class="card-text">Our 10U team will be moving up in the fall. We are looking for hard working committed athletes to add to our family.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏆</div>
+            <h3 class="card-title">Our Partners</h3>
+            <p class="card-text">Proudly partnered with New Balance, Wilson, and Louisville Slugger to provide our athletes with top-tier equipment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section" style="background: rgba(124, 58, 237, 0.05);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ready to Join?</h2>
+          <p class="section-subtitle">Contact us today to schedule a tryout</p>
+        </div>
+        <div class="contact-grid" style="max-width: 700px; margin: 0 auto;">
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <a href="tel:512-755-6975" class="contact-value" style="color: var(--color-primary); text-decoration: none;">512-755-6975</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:Texasvenom2k25@gmail.com" class="contact-value" style="color: var(--color-primary); text-decoration: none;">Texasvenom2k25@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RallyIQ CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="rallyiq-banner">
+          <div class="rallyiq-logo">RallyIQ</div>
+          <p class="rallyiq-tagline">Team Management, Simplified</p>
+          <p style="color: var(--color-text-dark); opacity: 0.8; max-width: 600px; margin: 0 auto 30px;">
+            Access schedules, make payments, view documents, and stay connected with the team.
+          </p>
+          <a href="rallyiq.html" class="btn" style="background: var(--color-text-dark); color: var(--color-primary);">
+            Access RallyIQ
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <div class="footer-logo" style="background: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">🐍</div>
+          <span class="footer-title">Texas Venom Softball</span>
+        </div>
+        <p style="color: rgba(255,255,255,0.6); max-width: 300px;">1% better each day.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coaching.html">Coaching</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="policies.html">Policies</a></li>
+          <li><a href="rallyiq.html">RallyIQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:Texasvenom2k25@gmail.com">Texasvenom2k25@gmail.com</a></li>
+          <li><a href="tel:512-755-6975">512-755-6975</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Texas Venom Softball. All rights reserved. Powered by <a href="rallyiq.html">RallyIQ</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navMenu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

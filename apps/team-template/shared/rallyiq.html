@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RallyIQ - Team Management Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* RallyIQ Brand Colors - Override team colors */
+    :root {
+      --rallyiq-primary: #10b981;
+      --rallyiq-secondary: #059669;
+      --rallyiq-accent: #34d399;
+      --rallyiq-gradient: linear-gradient(135deg, #10b981, #059669);
+      --rallyiq-glow: rgba(16, 185, 129, 0.4);
+    }
+
+    .rallyiq-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+
+    .rallyiq-brand {
+      font-size: 5rem;
+      font-weight: 900;
+      background: var(--rallyiq-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+    }
+
+    .rallyiq-subtitle {
+      font-size: 1.5rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 30px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: var(--rallyiq-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+    }
+
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+      background: var(--rallyiq-gradient);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--rallyiq-accent);
+      margin-bottom: 10px;
+    }
+
+    .feature-desc {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .login-section {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .login-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 50px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .login-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .login-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 30px;
+    }
+
+    .login-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 40px;
+      background: white;
+      color: #059669;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .login-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .support-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.5);
+    }
+
+    .support-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .support-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 25px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 10px;
+      color: var(--rallyiq-accent);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .support-link:hover {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--rallyiq-primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <main class="main-content" style="padding-top: 0;">
+    <!-- Hero -->
+    <section class="rallyiq-hero">
+      <div>
+        <div class="rallyiq-brand">RallyIQ</div>
+        <p class="rallyiq-subtitle">Team Management, Simplified</p>
+        <p style="color: rgba(255,255,255,0.6); max-width: 600px; margin: 0 auto;">
+          The all-in-one platform for managing your sports organization.
+          Schedules, rosters, communications, and payments—all in one place.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" style="color: var(--rallyiq-primary);">Everything You Need</h2>
+          <p class="section-subtitle">Powerful tools designed for sports teams</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3 class="feature-title">Schedule Management</h3>
+            <p class="feature-desc">Create and share practice schedules, game times, and team events. Automatic reminders keep everyone on track.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3 class="feature-title">Roster Management</h3>
+            <p class="feature-desc">Maintain player profiles, emergency contacts, and medical information. Export rosters for tournaments.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3 class="feature-title">Team Communication</h3>
+            <p class="feature-desc">Send announcements, group messages, and individual notifications. Email and SMS support.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3 class="feature-title">Payment Processing</h3>
+            <p class="feature-desc">Collect dues, tournament fees, and fundraising contributions. Track payment history and send reminders.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3 class="feature-title">Attendance Tracking</h3>
+            <p class="feature-desc">Track practice and game attendance. Identify patterns and ensure player accountability.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📁</div>
+            <h3 class="feature-title">Document Storage</h3>
+            <p class="feature-desc">Store waivers, medical forms, bylaws, and policies. Easy access for parents and coaches.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section class="login-section">
+      <div class="login-card">
+        <h2 class="login-title">Access Your Team Portal</h2>
+        <p class="login-subtitle">Login to manage schedules, make payments, and stay connected.</p>
+        <a href="#" class="login-btn">
+          <span>🔐</span>
+          Sign In to RallyIQ
+        </a>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section class="support-section">
+      <div class="container">
+        <h3 style="color: var(--rallyiq-primary); font-size: 1.5rem; margin-bottom: 10px;">Need Help?</h3>
+        <p style="color: rgba(255,255,255,0.6);">Our support team is here to assist you</p>
+
+        <div class="support-links">
+          <a href="#" class="support-link">
+            <span>📚</span> Help Center
+          </a>
+          <a href="#" class="support-link">
+            <span>📧</span> Contact Support
+          </a>
+          <a href="#" class="support-link">
+            <span>💡</span> Feature Requests
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="background: #0f172a;">
+    <div class="footer-bottom" style="border: none; margin: 0; padding: 30px 20px;">
+      <p>&copy; 2024 RallyIQ. All rights reserved.</p>
+      <p style="margin-top: 10px; font-size: 0.8rem;">
+        <a href="#" style="color: var(--rallyiq-accent);">Privacy Policy</a> ·
+        <a href="#" style="color: var(--rallyiq-accent);">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
